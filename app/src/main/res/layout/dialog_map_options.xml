@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/btnCalcularDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📏 Calcular distancia"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btnCalcularArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📐 Calcular área"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btnLimpiarPuntos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🗑️ Limpiar puntos seleccionados"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/btnLimpiarMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🧹 Limpiar área dibujada"
+        android:padding="12dp"
+        android:background="?attr/selectableItemBackground"
+        android:textSize="16sp" />
+
+</LinearLayout>
