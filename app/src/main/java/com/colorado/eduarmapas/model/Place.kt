@@ -3,6 +3,7 @@ package com.colorado.eduarmapas.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+//Modelo de la tabla que se va a guardar en la base de datos
 @Entity
 data class Place (
     @PrimaryKey(autoGenerate = true) val id: Int = 0,

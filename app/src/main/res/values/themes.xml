@@ -3,7 +3,29 @@
     <style name="Base.Theme.Eduarmapas" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorSecondary</item>
+        <item name="colorOnPrimary">@color/colorTextPrimary</item>
+
+        <!-- Backgrounds -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorContainer</item>
+        <item name="colorOnSurface">@color/colorTextPrimary</item>
+
+        <!-- Others -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorContainer</item>
+
+        <item name="android:textColor">@color/colorTextPrimary</item>
     </style>
 
     <style name="Theme.Eduarmapas" parent="Base.Theme.Eduarmapas" />
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <!-- Fondo del dialog -->
+        <item name="android:background">@color/colorContainer</item>
+        <!-- Color de título y texto -->
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+    </style>
 </resources>

@@ -6,6 +6,7 @@ import androidx.room.Insert
 import androidx.room.Query
 import com.colorado.eduarmapas.model.Place
 
+//Clase de manipulacion de datos
 @Dao
 interface PlaceDAO {
     @Insert suspend fun insert(place: Place)

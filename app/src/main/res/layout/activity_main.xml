@@ -2,6 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -22,27 +23,33 @@
         android:gravity="end">
 
         <!-- Botón de Zoom In -->
-        <Button
+        <ImageButton
             android:id="@+id/btnZoomIn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:layout_marginEnd="10dp"/>
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_zoom_in"
+            android:background="@color/colorBorder"
+            android:tint="@color/white"
+            tools:ignore="UseAppTint" />
 
         <!-- Botón de Zoom Out -->
-        <Button
+        <ImageButton
             android:id="@+id/btnZoomOut"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            android:layout_marginEnd="10dp" />
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_zoom_out"
+            android:layout_marginEnd="10dp"
+            android:background="@color/colorBorder"
+            android:tint="@color/white"
+            tools:ignore="UseAppTint" />
 
         <!-- Boton mas opciones -->
-        <Button
+        <ImageButton
             android:id="@+id/btnOptions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="..."/>
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_menu"
+            android:background="@color/colorMarkerNormal"/>
 
     </LinearLayout>
 
