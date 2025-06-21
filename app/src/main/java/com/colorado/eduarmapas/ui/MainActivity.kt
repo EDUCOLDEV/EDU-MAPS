@@ -2,6 +2,7 @@ package com.colorado.eduarmapas.ui
 
 import android.graphics.BitmapFactory
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -99,17 +100,24 @@ class MainActivity : AppCompatActivity() {
                     if (isSelected) "Deseleccionar" else "Seleccionar"
                 )
 
+                //Adaptador para las opciones
+                val adapter = ArrayAdapter(this, R.layout.item_dialog_option, options)
 
                 //Se construye el alertdialog y se ejecuta una accion de acuerdo a la opcion seleccionada
                 AlertDialog.Builder(this, R.style.AlertDialogTheme) //Se pasa el contexto y el tema
-                    .setTitle("Opciones del marcador")              //Se agrega titulo
-                    .setItems(options) { _, which ->                //Se agrega las opciones
+                    .setTitle("Opciones del marcador") //Se agrega titulo
+                    .setAdapter(adapter) { dialog, which ->                //Se agrega las opciones
                         when (which) {
                             0 -> {                                  //En caso de primera opcion seleccionada
                                 val message = "📍 $name\n📅 $date\n📝 $note"
+
+                                val view = layoutInflater.inflate(R.layout.dialog_message_info, null)
+                                val textView = view.findViewById<TextView>(R.id.tvDialogMessage)
+                                textView.text = message
+
                                 AlertDialog.Builder(this, R.style.AlertDialogTheme)   //Se abre otro dialogo con informacion del punto
                                     .setTitle("Información del lugar")
-                                    .setMessage(message)
+                                    .setView(view)
                                     .setPositiveButton("OK", null)
                                     .show()
                             }
@@ -302,7 +310,7 @@ class MainActivity : AppCompatActivity() {
         return total
     }
 
-    //eMetodo para calcular el area
+    //Metodo para calcular el area
     private fun calculatePolygonArea(points: List<Point>): Double {
 
         //Se comprueba si hay minimo 3 puntos para calcular el area
