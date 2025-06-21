@@ -12,7 +12,7 @@
         android:drawableStart="@drawable/ic_distance"
         android:drawablePadding="10dp"
         android:drawableTint="@color/white"
-        android:text="Calcular distancia"
+        android:text="@string/calculate_distance"
         android:padding="12dp"
         android:background="?attr/selectableItemBackground"
         android:textSize="16sp" />
@@ -24,7 +24,7 @@
         android:drawableStart="@drawable/ic_area"
         android:drawablePadding="10dp"
         android:drawableTint="@color/white"
-        android:text="Calcular área"
+        android:text="@string/calculate_area"
         android:padding="12dp"
         android:background="?attr/selectableItemBackground"
         android:textSize="16sp" />
@@ -36,7 +36,7 @@
         android:drawableStart="@drawable/ic_delete"
         android:drawablePadding="10dp"
         android:drawableTint="@color/white"
-        android:text="Limpiar puntos seleccionados"
+        android:text="@string/clean_points"
         android:padding="12dp"
         android:background="?attr/selectableItemBackground"
         android:textSize="16sp" />
@@ -48,7 +48,7 @@
         android:drawableStart="@drawable/ic_delete"
         android:drawablePadding="10dp"
         android:drawableTint="@color/white"
-        android:text="Limpiar área dibujada"
+        android:text="@string/clean_drawable"
         android:padding="12dp"
         android:background="?attr/selectableItemBackground"
         android:textSize="16sp" />

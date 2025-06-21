@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">eduarmapas</string>
+    <string name="name_place">Nombre del lugar</string>
+    <string name="name_place_hint">Ingrese nombre del lugar</string>
+    <string name="notes_place">Notas del lugar</string>
+    <string name="notes_place_hint">Ingrese nombre del lugar</string>
+    <string name="calculate_area">Calcular área</string>
+    <string name="calculate_distance">Calcular distancia</string>
+    <string name="clean_points">Limpiar puntos seleccionados</string>
+    <string name="clean_drawable">Limpiar área dibujada</string>
 </resources>
